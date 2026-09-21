@@ -1,5 +1,3 @@
-
-
 name: "FAP: Build"
 on: [push, pull_request]
 jobs:
@@ -12,8 +10,7 @@ jobs:
         with:
           sdk-url: https://github.com/Next-Flip/Momentum-Firmware.git
           sdk-channel: dev
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: capture_monstres-fap
           path: ${{ steps.build-app.outputs.fap-artifacts }}
-
