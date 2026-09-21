@@ -8,8 +8,7 @@ jobs:
       - uses: flipperdevices/flipperzero-ufbt-action@v0.1
         id: build-app
         with:
-          sdk-url: https://github.com/Next-Flip/Momentum-Firmware.git
-          sdk-hw-target: f7
+          sdk-channel: dev
       - uses: actions/upload-artifact@v4
         with:
           name: capture_monstres-fap
