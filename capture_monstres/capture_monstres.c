@@ -111,4 +111,4 @@ int32_t capture_monstres_app(void* p) {
     furi_record_close(RECORD_GUI);
     free(etat);
     return 0;
-
+}
