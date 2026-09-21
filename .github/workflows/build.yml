@@ -9,7 +9,7 @@ jobs:
         id: build-app
         with:
           sdk-url: https://github.com/Next-Flip/Momentum-Firmware.git
-          hw-target: f7
+          sdk-hw-target: f7
       - uses: actions/upload-artifact@v4
         with:
           name: capture_monstres-fap
