@@ -1,0 +1,9 @@
+App(
+    appid="capture_monstres",
+    name="Capture Monstres",
+    entry_point="capture_monstres_app",
+    stack_size=2 * 1024,
+    fap_category="Games",
+    fap_version=(1, 0),
+    fap_description="Jeu de capture de monstres",
+

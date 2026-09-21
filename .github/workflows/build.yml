@@ -1,0 +1,15 @@
+name: "FAP: Build"
+on: [push, pull_request]
+jobs:
+  ufbt-build-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: flipperdevices/flipperzero-ufbt-action@v0.1
+        id: build-app
+        with:
+          sdk-channel: dev
+      - uses: actions/upload-artifact@v3
+        with:
+          name: capture_monstres-fap
+          path: ${{ steps.build-app.outputs.fap-artifacts }}
