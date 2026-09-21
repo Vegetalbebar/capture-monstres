@@ -5,9 +5,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: flipperdevices/flipperzero-ufbt-action@v0.1
+      - uses: flipperdevices/flipperzero-ufbt-action@v0.2
         id: build-app
         with:
+          app-dir: .
           sdk-channel: dev
       - uses: actions/upload-artifact@v4
         with:
