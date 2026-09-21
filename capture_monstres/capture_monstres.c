@@ -112,3 +112,4 @@ int32_t capture_monstres_app(void* p) {
     free(etat);
     return 0;
 }
+}
